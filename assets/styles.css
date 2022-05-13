@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(162,228,184);
+    --secondary-color: rgb(0,47,108);
+}
+
+header {
+    display: flex;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+
+}
+
+nav ul li {
+    list-style: none;
+    display: flex;
+}
