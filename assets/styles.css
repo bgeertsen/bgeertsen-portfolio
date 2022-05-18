@@ -6,7 +6,8 @@
 
 body {
     background-color: black;
-    background-image: url("./images/background.jpg");
+    background-image: url("./images/background.jpg"); 
+    /* Background is an open source photo made by Aron Visuals. Found on Unsplash.com */
     background-position: center;
     background-size: 50%;
     background-repeat: no-repeat;
@@ -79,9 +80,10 @@ section {
 
 .section-title {
     display: flex;
-
+    font-size: 52px;
     height: auto;
     justify-content: center;
+    text-align: center;
     align-self: stretch;
     width: 30%;
     border-right: 3px solid var(--secondary-color);
@@ -113,6 +115,10 @@ footer ul li {
 
 }
 
+footer h2 {
+    font-size: 36px;
+}
+
 #project-box {
     display: flex;
     flex-wrap: wrap;
@@ -125,8 +131,7 @@ footer ul li {
     width: 49%;
     height: 300px;
     background-color: var(--secondary-color);
-    border: 1px solid black;
-
+    border: 10px solid var(--secondary-color);
 }
 
 .main-project {
@@ -137,33 +142,44 @@ footer ul li {
     position: relative;
 }
 
-#main-project-img {
+.project-img {
     width: 100%;
     height: 100%;
 }
 
 .main-label {
     color: black;
+    font-size: 16px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items:center;
-    width: 130px;
-    height: 45px;
+    width: 175px;
+    height: 75px;
     background-color: var(--secondary-color);
     position: relative;
-    top: -45px;
+    top: -75px;
     left: -5px;
 }
 
+.main-label h3 {
+    font-size: 28px;
+}
 .secondary-label {
     color: black;
+    font-size: 16px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items:center;
     width: 130px;
-    height: 45px;
+    height: 70px;
     background-color: var(--secondary-color);
     position: relative;
-    top: 230px;
+    top: -70px;
     left: -1px;
+}
+
+.secondary-label h3 {
+    font-size: 18px;
 }
