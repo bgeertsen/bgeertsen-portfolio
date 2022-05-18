@@ -6,7 +6,7 @@
 
 body {
     background-color: black;
-    background-image: url("./images/hero1.jpg");
+    background-image: url("./images/background.jpg");
     background-position: center;
     background-size: 50%;
     background-repeat: no-repeat;
@@ -21,14 +21,22 @@ body {
 }
 
 header {
-    background-color: var(--primary-color);
+    background-color: black;
     color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 2em;
     margin: 0 20px 100px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
 }
 
 header h1 {
@@ -44,6 +52,11 @@ nav ul li {
     padding: 20px;
 }
 
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
 section {
     /* height: 60vh; */
     margin: 200px 0;
@@ -51,7 +64,7 @@ section {
     font-size: 24px;
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
+
 
 }
 
@@ -59,6 +72,9 @@ section {
     width: 70%;
     text-align: center;
     padding: 100px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
 }
 
 .section-title {

@@ -15,13 +15,13 @@
         <nav>
             <ul>
                 <li>
-                    About
+                    <a href="#about-me">About</a>
                 </li>
                 <li>
-                    Work
+                    <a href="#work">Work</a>
                 </li>
                 <li>
-                    Contact Me
+                    <a href="#contact-me">Contact Me</a>
                 </li>
                 <li>
                     Resume
@@ -29,14 +29,16 @@
             </ul>
         </nav>
     </header>
+    <section class="hero">
+            <img id="headshot" src="./assets/images/headshot.jpg" alt="photo of me">
     </section>
-    <section>
+    <section id="about-me">
         <div class="section-title">
             <h2>
                 About Me
             </h2>
         </div>
-        <div class="content">
+        <div class="content about-me">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -45,19 +47,21 @@
             </p>
         </div>
     </section>
-    <section>
+    <section id="work">
         <div class="section-title">
             <h2>
                 Work
             </h2>
         </div>
         <article class="content" id="project-box">
-            <div class="main-project">
-                <img id="main-project-img" src = "assets/images/run-buddy-screenshot.jpg">
-                <div class="main-label">
-                    Run Buddy
+            <a href="https://bgeertsen.github.io/run-buddy/">
+                <div class="main-project">
+                    <img id="main-project-img" src = "assets/images/run-buddy-screenshot.jpg">
+                    <div class="main-label">
+                        Run Buddy
+                    </div>
                 </div>
-            </div>
+            </a>
             <div class="project">
                 <div class="secondary-label">
                     Project Title
@@ -80,16 +84,16 @@
             </div>
         </article>
     </section>
-    <footer>
+    <footer id="contact-me">
         <div class="section-title">
             <h2>Contact Me</h2>
         </div>
         <div  class="contact-info">
             <ul>
-                <li>(509) 771-2596</li>
-                <li>brandon.geertsen@gmail.com</li>
-                <li>github</li>
-                <li>linkedin</li>
+                <li>Phone: (509) 771-2596</li>
+                <li><a href="mailto:brandon.geertsen@gmail.com">brandon.geertsen@gmail.com</a></li>
+                <li><a href="https://github.com/bgeertsen">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/brandon-geertsen/">LinkedIn</a></li>
             </ul>
         </div>
     </footer>
